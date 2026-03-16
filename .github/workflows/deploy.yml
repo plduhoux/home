@@ -19,6 +19,13 @@ jobs:
       - run: npm ci
       - run: npm run generate
 
+      # OVH mutualisé doesn't serve .wasm with correct MIME type
+      - name: Fix WASM MIME type for _nuxt
+        run: |
+          echo '<FilesMatch "\.wasm$">' > .output/public/_nuxt/.htaccess
+          echo '  ForceType application/wasm' >> .output/public/_nuxt/.htaccess
+          echo '</FilesMatch>' >> .output/public/_nuxt/.htaccess
+
       - name: Deploy via LFTP
         env:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
