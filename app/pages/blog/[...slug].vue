@@ -39,12 +39,45 @@ useHead({
   },
   meta: [
     { name: 'description', content: post.value.description || '' },
+    { property: 'og:title', content: post.value.title },
+    { property: 'og:description', content: post.value.description || '' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:url', content: `${siteUrl}${currentPath.value}` },
+    { property: 'og:image', content: `${siteUrl}/mebg.jpeg` },
+    { name: 'twitter:card', content: 'summary_large_image' },
   ],
   link: [
     { rel: 'canonical', href: `${siteUrl}${currentPath.value}` },
     { rel: 'alternate', hreflang: 'fr', href: `${siteUrl}${frPath.value}` },
     { rel: 'alternate', hreflang: 'en', href: `${siteUrl}${enPath.value}` },
     { rel: 'alternate', hreflang: 'x-default', href: `${siteUrl}${frPath.value}` },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': post.value.title,
+        'description': post.value.description || '',
+        'datePublished': post.value.date,
+        'author': {
+          '@type': 'Person',
+          'name': 'Pierre-Louis Duhoux',
+          'url': 'https://plduhoux.fr',
+        },
+        'publisher': {
+          '@type': 'Person',
+          'name': 'Pierre-Louis Duhoux',
+        },
+        'url': `${siteUrl}${currentPath.value}`,
+        'inLanguage': locale.value === 'fr' ? 'fr-FR' : 'en-US',
+        'mainEntityOfPage': {
+          '@type': 'WebPage',
+          '@id': `${siteUrl}${currentPath.value}`,
+        },
+      }),
+    },
   ],
 })
 </script>
