@@ -1,16 +1,16 @@
 # plduhoux.fr
 
-Portfolio et blog personnel de Pierre-Louis Duhoux.
+Personal portfolio and blog of Pierre-Louis Duhoux.
 
 ## Stack
 
 - **Nuxt 4** (Vue 3, static generation)
 - **Tailwind CSS 4**
-- **Nuxt Content** (articles de blog en Markdown)
+- **Nuxt Content** (Markdown blog articles)
 - **Nuxt i18n** (FR / EN)
 - **Shiki** (syntax highlighting)
 
-## Dev
+## Development
 
 ```bash
 npm install
@@ -19,16 +19,16 @@ npm run dev -- --host 0.0.0.0 --port 3333
 
 ## Build & Deploy
 
-Le déploiement est automatique via GitHub Actions sur push `main`.
+Deployment is automatic via GitHub Actions on push to `main`.
 
 ```bash
-npm run generate  # Build statique dans .output/public/
+npm run generate  # Static build in .output/public/
 ```
 
 ## Blog
 
-Les articles sont dans `content/blog/fr/` et `content/blog/en/` au format Markdown.
+Articles are stored in `content/blog/fr/` and `content/blog/en/` as Markdown files.
 
-## Licence
+## License
 
-Tous droits réservés.
+All rights reserved.
