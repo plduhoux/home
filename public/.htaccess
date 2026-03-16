@@ -1,7 +1,12 @@
 # MIME types
 AddType application/wasm .wasm
-AddType application/javascript .js
-AddType application/json .json
+
+# Force WASM Content-Type via mod_headers (OVH mutualisé ignore AddType pour .wasm)
+<IfModule mod_headers.c>
+  <FilesMatch "\.wasm$">
+    Header set Content-Type "application/wasm"
+  </FilesMatch>
+</IfModule>
 
 # Compression gzip
 <IfModule mod_deflate.c>
