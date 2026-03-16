@@ -5,7 +5,27 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/i18n'],
+  modules: ['@nuxt/content', '@nuxtjs/i18n', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+
+  site: {
+    url: 'https://plduhoux.fr',
+    name: 'Pierre-Louis Duhoux',
+  },
+
+  robots: {
+    groups: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
+    sitemap: '/sitemap_index.xml',
+  },
+
+  sitemap: {
+    autoI18n: true,
+    sources: ['/api/__sitemap__/urls'],
+  },
 
   css: ['~/assets/css/main.css'],
 
