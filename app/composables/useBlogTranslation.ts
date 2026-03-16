@@ -14,14 +14,22 @@ export function useBlogTranslation() {
   const route = useRoute()
   const { locale } = useI18n()
 
+  // Parse path directly instead of relying on route.params (which can be empty during SSG)
   const isBlogArticle = computed(() => {
-    return route.path.includes('/blog/') && route.params.slug
+    const path = route.path.replace(/\/$/, '') // strip trailing slash
+    const segments = path.split('/')
+    // FR: /blog/slug  EN: /en/blog/slug
+    const blogIndex = segments.indexOf('blog')
+    return blogIndex !== -1 && blogIndex < segments.length - 1
   })
 
   const currentSlug = computed(() => {
     if (!isBlogArticle.value) return null
-    const parts = Array.isArray(route.params.slug) ? route.params.slug : [route.params.slug]
-    return parts.join('/')
+    const path = route.path.replace(/\/$/, '')
+    const segments = path.split('/')
+    // slug is everything after 'blog'
+    const blogIndex = segments.indexOf('blog')
+    return segments.slice(blogIndex + 1).join('/')
   })
 
   const translatedPath = computed(() => {
