@@ -91,10 +91,10 @@
           "personal"
         ],
         "images": [
-          "/projects/blue-1.png",
-          "/projects/blue-2.png",
-          "/projects/blue-3.png",
-          "/projects/blue-4.png"
+          "/projects/blue-1.webp",
+          "/projects/blue-2.webp",
+          "/projects/blue-3.webp",
+          "/projects/blue-4.webp"
         ],
         "link": "https://bluereef.app",
         "current": true,
@@ -123,7 +123,7 @@
           "opensource"
         ],
         "images": [
-          "/projects/arenai.png"
+          "/projects/arenai.webp"
         ],
         "link": "https://arenai.plduhoux.fr",
         "github": "https://github.com/plduhoux/arenai",
@@ -154,10 +154,10 @@
           "personal"
         ],
         "images": [
-          "/projects/hanziquest-1.png",
-          "/projects/hanziquest-2.png",
-          "/projects/hanziquest-3.png",
-          "/projects/hanziquest-4.png"
+          "/projects/hanziquest-1.webp",
+          "/projects/hanziquest-2.webp",
+          "/projects/hanziquest-3.webp",
+          "/projects/hanziquest-4.webp"
         ],
         "current": true,
         "role": "Side project",
@@ -186,9 +186,9 @@
           "ai"
         ],
         "images": [
-          "/projects/clickncom-home.png",
-          "/projects/clickncom-editor.png",
-          "/projects/clickncom-slider.png"
+          "/projects/clickncom-home.webp",
+          "/projects/clickncom-editor.webp",
+          "/projects/clickncom-slider.webp"
         ],
         "link": "https://clickncom.com",
         "role": "CTO",
@@ -214,9 +214,9 @@
           "opensource"
         ],
         "images": [
-          "/projects/amr-2.png",
-          "/projects/amr-3.png",
-          "/projects/amr-1.png"
+          "/projects/amr-2.webp",
+          "/projects/amr-3.webp",
+          "/projects/amr-1.webp"
         ],
         "link": "https://allmangasreader.com/",
         "gitlab": "https://gitlab.com/all-mangas-reader/all-mangas-reader-2",
@@ -243,8 +243,8 @@
           "nuxtjs"
         ],
         "images": [
-          "/projects/kamek-1.png",
-          "/projects/kamek-2.png"
+          "/projects/kamek-1.webp",
+          "/projects/kamek-2.webp"
         ],
         "link": "https://kamekbook.com/",
         "role": "Side project",
@@ -269,7 +269,7 @@
           "personal"
         ],
         "images": [
-          "/projects/aob.png"
+          "/projects/aob.webp"
         ],
         "link": "https://autourdelorangebleue.com/",
         "role": "Creator",
@@ -320,7 +320,7 @@
           "ionic"
         ],
         "images": [
-          "/projects/ouetquand.png"
+          "/projects/ouetquand.webp"
         ],
         "stopped": true,
         "link": "https://www.ou-et-quand.net/",
@@ -371,9 +371,9 @@
           "personal"
         ],
         "images": [
-          "/projects/randompedia.png",
-          "/projects/randompedia-1.png",
-          "/projects/randompedia-2.png"
+          "/projects/randompedia.webp",
+          "/projects/randompedia-1.webp",
+          "/projects/randompedia-2.webp"
         ],
         "stopped": true,
         "role": "Side project",
