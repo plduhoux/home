@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const NuxtLink = resolveComponent('NuxtLink')
 const { t } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
@@ -58,31 +57,47 @@ const switchPath = computed(() => {
           </a>
         </template>
 
-        <!-- Language switcher (use <a> on blog articles to force full reload, otherwise useAsyncData won't refetch) -->
-        <component
-          :is="isBlogArticle ? 'a' : NuxtLink"
-          :to="isBlogArticle ? undefined : switchPath"
-          :href="isBlogArticle ? switchPath : undefined"
+        <!-- Language switcher: <a> on blog articles to force full reload, NuxtLink elsewhere -->
+        <a
+          v-if="isBlogArticle"
+          :href="switchPath"
           class="inline-flex items-center px-1.5 py-1 rounded-md hover:bg-white/10 transition-colors cursor-pointer"
           :aria-label="isCurrentFr ? 'Switch to English' : 'Passer en français'"
         >
           <img v-if="isCurrentFr" src="/flags/gb.svg" alt="English" class="w-auto h-4 rounded-sm" />
           <img v-else src="/flags/fr.svg" alt="Français" class="w-auto h-4 rounded-sm" />
-        </component>
+        </a>
+        <NuxtLink
+          v-else
+          :to="switchPath"
+          class="inline-flex items-center px-1.5 py-1 rounded-md hover:bg-white/10 transition-colors cursor-pointer"
+          :aria-label="isCurrentFr ? 'Switch to English' : 'Passer en français'"
+        >
+          <img v-if="isCurrentFr" src="/flags/gb.svg" alt="English" class="w-auto h-4 rounded-sm" />
+          <img v-else src="/flags/fr.svg" alt="Français" class="w-auto h-4 rounded-sm" />
+        </NuxtLink>
       </div>
 
       <!-- Mobile toggle -->
       <div class="flex md:hidden items-center gap-3">
-        <component
-          :is="isBlogArticle ? 'a' : NuxtLink"
-          :to="isBlogArticle ? undefined : switchPath"
-          :href="isBlogArticle ? switchPath : undefined"
+        <a
+          v-if="isBlogArticle"
+          :href="switchPath"
           class="inline-flex items-center px-1.5 py-1 rounded-md hover:bg-white/10 transition-colors cursor-pointer"
           :aria-label="isCurrentFr ? 'Switch to English' : 'Passer en français'"
         >
           <img v-if="isCurrentFr" src="/flags/gb.svg" alt="English" class="w-auto h-4 rounded-sm" />
           <img v-else src="/flags/fr.svg" alt="Français" class="w-auto h-4 rounded-sm" />
-        </component>
+        </a>
+        <NuxtLink
+          v-else
+          :to="switchPath"
+          class="inline-flex items-center px-1.5 py-1 rounded-md hover:bg-white/10 transition-colors cursor-pointer"
+          :aria-label="isCurrentFr ? 'Switch to English' : 'Passer en français'"
+        >
+          <img v-if="isCurrentFr" src="/flags/gb.svg" alt="English" class="w-auto h-4 rounded-sm" />
+          <img v-else src="/flags/fr.svg" alt="Français" class="w-auto h-4 rounded-sm" />
+        </NuxtLink>
         <button
           class="text-text-secondary hover:text-text-primary transition-colors"
           aria-label="Menu"

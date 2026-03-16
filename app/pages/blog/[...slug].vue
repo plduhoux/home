@@ -43,7 +43,6 @@ useHead({
     { property: 'og:description', content: post.value.description || '' },
     { property: 'og:type', content: 'article' },
     { property: 'og:url', content: `${siteUrl}${currentPath.value}` },
-    { property: 'og:image', content: `${siteUrl}/mebg.jpeg` },
     { name: 'twitter:card', content: 'summary_large_image' },
   ],
   link: [
@@ -79,6 +78,11 @@ useHead({
       }),
     },
   ],
+})
+
+defineOgImageComponent('Blog', {
+  title: post.value.title,
+  description: post.value.description || '',
 })
 </script>
 

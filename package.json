@@ -14,8 +14,11 @@
     "@nuxtjs/i18n": "^10.2.3",
     "@nuxtjs/robots": "^5.7.1",
     "@nuxtjs/sitemap": "^7.6.0",
+    "@resvg/resvg-js": "^2.6.2",
     "better-sqlite3": "^12.6.2",
     "nuxt": "^4.3.2",
+    "nuxt-og-image": "^6.0.1",
+    "satori": "^0.25.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
   },
