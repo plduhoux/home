@@ -1,0 +1,425 @@
+{
+  "nav": {
+    "about": "À propos",
+    "projects": "Projets",
+    "stack": "Stack",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "location": "Freelance - Toulouse",
+    "tagline": "Architecte web et mobile. 15 ans d'expérience. J'aide mes clients à définir, concevoir et construire leurs solutions techniques.",
+    "cta": "Me contacter",
+    "cta2": "Voir mes projets"
+  },
+  "about": {
+    "title": "À propos",
+    "p1": "Développeur web depuis 15 ans, j'ai travaillé en ESN, en Startup et je suis maintenant Freelance. Architecte web et mobile, j'aide mes clients à définir l'architecture de leur solution, je les conseille sur leurs choix et j'interviens techniquement sur leurs projets.",
+    "p2": "J'ai réalisé plusieurs applications mobiles et SaaS entièrement (backend NodeJS, frontend NuxtJS, db postgres, déploiement avec CI/CD sur un PaaS, intégration d'APIs de paiement, d'envoi de mail/SMS, authentification externe...) dans des domaines fonctionnels variés (accompagnement marketing, formation, voyage, aquariophilie marine).",
+    "p3": "J'ai passé trois ans sur les routes d'Amérique avec ma famille et je vis aujourd'hui en France avec mes trois enfants. Au-delà du développement, j'aime modéliser et imprimer des objets en 3D et réaliser de petits projets électroniques.",
+    "journey": "Parcours",
+    "journey1": "15 ans de développement web professionnel",
+    "journey2": "Ex-CTO d'une startup SaaS (rachetée)",
+    "journey3": "3 ans sur les routes d'Amérique avec ma famille",
+    "journey4": "Freelance depuis Toulouse, disponible en remote"
+  },
+  "services": {
+    "title": "Je peux vous accompagner",
+    "description": "Je recherche activement un poste ou une mission liée à mes compétences et mes centres d'intérêts. Si vous avez un besoin concernant le développement d'une application mobile, d'un SaaS ou d'une application liée à l'intelligence artificielle, n'hésitez pas à me contacter.",
+    "ai": "J'intègre des APIs de LLMs dans des outils web au quotidien : OpenAI, Claude, Gemini, Mistral, Groq, Llama. Du function calling à l'orchestration d'agents autonomes, en passant par le RAG et les workflows conversationnels. Si vous avez un besoin lié à l'IA, je serai ravi de vous accompagner.",
+    "cta": "Me contacter"
+  },
+  "projects": {
+    "title": "Projets et expérience",
+    "subtitle": "Missions client, side projects et contributions.",
+    "current": "en cours",
+    "stopped": "arrêté",
+    "filterAll": "Tous",
+    "filterTags": {
+      "mobile": "Application mobile",
+      "saas": "SaaS",
+      "ai": "Intelligence artificielle",
+      "personal": "Projet personnel",
+      "opensource": "Open source",
+      "ionic": "Ionic",
+      "nuxtjs": "Nuxt.js"
+    },
+    "list": [
+      {
+        "key": "az",
+        "title": "Aroma-Zone",
+        "link": "https://www.aroma-zone.com",
+        "period": "2024 - present",
+        "tags": [
+          "Vue.js",
+          "Node.js",
+          "Contentful",
+          "Architecture"
+        ],
+        "filterTags": [
+          "ai",
+          "nuxtjs"
+        ],
+        "images": [],
+        "current": true,
+        "role": "Développeur senior / Architecte",
+        "description": "Mission freelance temps plein. Architecture, développement e-commerce et création d'apps Contentful pour la gestion de contenu.",
+        "context": "Aroma-Zone est un leader européen de la cosmétique naturelle et du DIY, avec un site e-commerce à fort trafic et un catalogue de plusieurs milliers de références. Une part importante de mon travail porte sur le tooling interne et l'écosystème Contentful.",
+        "highlights": [
+          "Développement d'apps Contentful custom pour les équipes contenu et marketing",
+          "Tooling interne : outils d'automatisation et de productivité pour les équipes",
+          "Refonte de modules critiques de la plateforme e-commerce",
+          "Intégration d'IA dans les workflows de contenu",
+          "Migration d'un modèle de page builder récursif vers un modèle rationalisé dans Contentful, avec migration de centaines de milliers de blocs",
+          "Collaboration avec des équipes produit, design et QA en mode agile"
+        ]
+      },
+      {
+        "key": "blue",
+        "title": "Blue",
+        "period": "2022 - present",
+        "tags": [
+          "Vue.js",
+          "ionic",
+          "Strapi",
+          "PostgreSQL"
+        ],
+        "filterTags": [
+          "mobile",
+          "ionic",
+          "ai",
+          "personal"
+        ],
+        "images": [
+          "/projects/blue-1.png",
+          "/projects/blue-2.png",
+          "/projects/blue-3.png",
+          "/projects/blue-4.png"
+        ],
+        "link": "https://bluereef.app",
+        "current": true,
+        "role": "Créateur",
+        "description": "Application mobile de gestion d'aquarium récifal. Suivi des paramètres d'eau, journalisation, communauté.",
+        "context": "Blue aide les aquariophiles à suivre leurs paramètres d'eau, documenter l'évolution de leur bac et échanger avec la communauté. Deux applications mobiles publiées (récifal et eau douce), et une application pour les professionnels du milieu en cours de développement.",
+        "highlights": [
+          "Deux apps mobiles cross-platform (iOS & Android) avec Ionic/Vue : Blue Reef (récifal) et Blue Freshwater (eau douce)",
+          "Backend Strapi avec API REST et base PostgreSQL",
+          "Application professionnelle en cours de développement",
+          "Gestion complète du projet : conception, design, développement, déploiement"
+        ]
+      },
+      {
+        "key": "arenai",
+        "title": "ArenAI",
+        "period": "2026",
+        "tags": [
+          "LLM",
+          "Node.js",
+          "Benchmark"
+        ],
+        "filterTags": [
+          "ai",
+          "personal",
+          "opensource"
+        ],
+        "images": [
+          "/projects/arenai.png"
+        ],
+        "link": "https://arenai.plduhoux.fr",
+        "github": "https://github.com/plduhoux/arenai",
+        "current": true,
+        "role": "Side project",
+        "description": "Benchmark de déduction sociale pour LLMs. Les modèles jouent entre eux à des jeux de rôles sociaux.",
+        "context": "Projet expérimental qui fait jouer des LLMs à des jeux de déduction sociale (type Loup-Garou). L'objectif : évaluer leur capacité de raisonnement social, de bluff et de persuasion.",
+        "highlights": [
+          "Orchestration de parties multi-agents avec différents LLMs",
+          "Système de scoring et classement des modèles",
+          "Analyse des stratégies émergentes : alliances, bluff, manipulation",
+          "Open source sur GitHub"
+        ]
+      },
+      {
+        "key": "hanziquest",
+        "title": "HanziQuest",
+        "link": "https://hanziquest.plduhoux.fr",
+        "period": "2024",
+        "tags": [
+          "ionic",
+          "Vue.js",
+          "Capacitor"
+        ],
+        "filterTags": [
+          "mobile",
+          "ionic",
+          "personal"
+        ],
+        "images": [
+          "/projects/hanziquest-1.png",
+          "/projects/hanziquest-2.png",
+          "/projects/hanziquest-3.png",
+          "/projects/hanziquest-4.png"
+        ],
+        "current": true,
+        "role": "Side project",
+        "description": "Application d'apprentissage du chinois. Exercices interactifs, répétition espacée, gamification.",
+        "context": "Application mobile pour apprendre les caractères chinois (hanzi). Née de mon propre apprentissage du mandarin, avec une approche gamifiée et de la répétition espacée.",
+        "highlights": [
+          "Application mobile native avec Ionic, Vue et Capacitor",
+          "Système de répétition espacée (SRS) pour la mémorisation",
+          "Exercices interactifs : traçage, reconnaissance, quiz",
+          "Publiée sur le Google Play Store"
+        ]
+      },
+      {
+        "key": "clickncom",
+        "title": "ClicknCom",
+        "period": "2019 - 2022",
+        "tags": [
+          "Node.js",
+          "Vue.js",
+          "PostgreSQL",
+          "saas"
+        ],
+        "filterTags": [
+          "saas",
+          "nuxtjs",
+          "ai"
+        ],
+        "images": [
+          "/projects/clickncom-home.png",
+          "/projects/clickncom-editor.png",
+          "/projects/clickncom-slider.png"
+        ],
+        "link": "https://clickncom.com",
+        "role": "CTO",
+        "description": "Plateforme SaaS de création de jeux concours et campagnes marketing interactives. La société a été rachetée.",
+        "context": "Startup toulousaine où j'ai porté la casquette de CTO pendant 3 ans. La plateforme permettait aux marques de créer des jeux concours, quiz et campagnes interactives en quelques clics.",
+        "highlights": [
+          "Architecture complète de la plateforme SaaS multi-tenant",
+          "Gestion d'équipe technique (recrutement, mentorat, code review)",
+          "Scalabilité : gestion de pics de trafic lors de campagnes virales",
+          "La société a été rachetée, validant le produit et la stack technique"
+        ]
+      },
+      {
+        "key": "amr",
+        "title": "All Mangas Reader",
+        "period": "2010 - present",
+        "tags": [
+          "Chrome Extension",
+          "JavaScript"
+        ],
+        "filterTags": [
+          "personal",
+          "opensource"
+        ],
+        "images": [
+          "/projects/amr-2.png",
+          "/projects/amr-3.png",
+          "/projects/amr-1.png"
+        ],
+        "link": "https://allmangasreader.com/",
+        "gitlab": "https://gitlab.com/all-mangas-reader/all-mangas-reader-2",
+        "role": "Créateur",
+        "description": "Extension de navigateur pour suivre sa lecture de manga. Jusqu'à 50 000 utilisateurs. Open source.",
+        "context": "Commencé en 2010, ce projet était à la base pour moi, pour m'aider à suivre mes lectures. L'extension Chrome a eu jusqu'à 50 000 utilisateurs. Aujourd'hui, la V2 est un projet open source géré par la communauté.",
+        "highlights": [
+          "Extension Chrome avec 50 000 utilisateurs au pic",
+          "Suivi automatique de la lecture sur de multiples sites de manga",
+          "V2 open source gérée par la communauté",
+          "Système de notifications pour les nouveaux chapitres"
+        ]
+      },
+      {
+        "key": "kamekbook",
+        "title": "Kamek Book",
+        "period": "2021 - 2023",
+        "tags": [
+          "nuxtjs",
+          "Scraping"
+        ],
+        "filterTags": [
+          "personal",
+          "nuxtjs"
+        ],
+        "images": [
+          "/projects/kamek-1.png",
+          "/projects/kamek-2.png"
+        ],
+        "link": "https://kamekbook.com/",
+        "role": "Side project",
+        "description": "Outil d'optimisation des ressources Mario Kart Tour. Visualisation et calcul de la progression optimale.",
+        "context": "Ce projet permet de visualiser les ressources les plus intéressantes à un moment donné dans le jeu Mario Kart Tour afin d'optimiser sa progression. Des scrappers se chargent de récupérer automatiquement toutes les données du jeu.",
+        "highlights": [
+          "Scraping automatique des données du jeu",
+          "Algorithme d'optimisation de la progression",
+          "Interface Nuxt.js pour la visualisation",
+          "Le jeu n'ayant plus de nouveau contenu, l'outil est devenu obsolète"
+        ]
+      },
+      {
+        "key": "orangebleue",
+        "title": "Autour de l'Orange Bleue",
+        "period": "2015 - 2018",
+        "tags": [
+          "Blog",
+          "Voyage"
+        ],
+        "filterTags": [
+          "personal"
+        ],
+        "images": [
+          "/projects/aob.png"
+        ],
+        "link": "https://autourdelorangebleue.com/",
+        "role": "Créateur",
+        "description": "Blog de notre road trip en famille à travers l'Amérique : 17 pays en 3 ans, du Canada à Ushuaïa.",
+        "context": "Réalisation du blog documentant notre voyage en famille de 3 ans à travers les Amériques. Du Canada à Ushuaïa en passant par l'Amérique centrale et la Colombie. Le projet a ensuite évolué vers une plateforme de blogging pour voyageurs (TrotBlogger).",
+        "highlights": [
+          "Blog de voyage complet avec cartes, photos et vidéos",
+          "17 pays traversés en 3 ans en camion aménagé",
+          "A donné naissance au projet TrotBlogger",
+          "Toujours en ligne : autourdelorangebleue.com"
+        ]
+      },
+      {
+        "key": "lola",
+        "title": "Lola Formation",
+        "period": "2022 - 2023",
+        "tags": [
+          "Strapi",
+          "nuxtjs",
+          "Node.js"
+        ],
+        "filterTags": [
+          "saas",
+          "nuxtjs"
+        ],
+        "images": [],
+        "stopped": true,
+        "role": "Architecte / Développeur",
+        "description": "Architecture et développement d'une plateforme de formation avec gestion CRM intégrée.",
+        "context": "Plateforme SaaS de formation en ligne. Backend NodeJS, frontend NuxtJS, intégration Brevo pour l'envoi de mails et SMS avec double authentification, éditeur de contenu de formation avec validations de connaissances (quiz, textes à trous).",
+        "highlights": [
+          "Intégration d'une API de streaming vidéo",
+          "Génération de PDFs contenant les contrats et le planning de formation, personnalisés pour chaque client",
+          "Éditeur de contenu de formation avec quiz intégrés",
+          "CRM intégré pour le suivi des apprenants"
+        ]
+      },
+      {
+        "key": "ouetquand",
+        "title": "Ou et quand ?",
+        "period": "2017",
+        "tags": [
+          "Mobile",
+          "ionic"
+        ],
+        "filterTags": [
+          "mobile",
+          "ionic"
+        ],
+        "images": [
+          "/projects/ouetquand.png"
+        ],
+        "stopped": true,
+        "link": "https://www.ou-et-quand.net/",
+        "role": "Développeur mobile",
+        "description": "Application mobile d'information sur des destinations de voyage. Collaboration avec ou-et-quand.net.",
+        "context": "Collaboration avec le site ou-et-quand.net pour réaliser leur application mobile. L'application permet de rechercher une destination pour ses prochaines vacances, en sachant ou non dans quelle partie du monde voyager et quand partir.",
+        "highlights": [
+          "Aide à trouver le bon moment pour partir selon la météo",
+          "Estimation du budget voyage",
+          "Proposition de circuits organisés par des agences",
+          "Informations météo détaillées par destination"
+        ]
+      },
+      {
+        "key": "trotblogger",
+        "title": "TrotBlogger",
+        "period": "2018 - 2019",
+        "tags": [
+          "saas",
+          "nuxtjs"
+        ],
+        "filterTags": [
+          "saas",
+          "nuxtjs"
+        ],
+        "images": [],
+        "stopped": true,
+        "role": "Créateur",
+        "description": "Plateforme SaaS de blogging dédiée aux voyageurs. Création facile de blogs avec cartes, photos et vidéos.",
+        "context": "Né de l'expérience du blog Autour de l'Orange Bleue. Plateforme permettant aux voyageurs de créer facilement un blog réactif mélangeant cartes, photos et vidéos, où qu'ils soient.",
+        "highlights": [
+          "Éditeur de blog optimisé pour le mobile",
+          "Intégration de cartes interactives",
+          "Support photos et vidéos",
+          "Templates adaptés au récit de voyage"
+        ]
+      },
+      {
+        "key": "randompedia",
+        "title": "RandomPedia",
+        "period": "2016",
+        "tags": [
+          "Mobile",
+          "NativeScript"
+        ],
+        "filterTags": [
+          "mobile",
+          "personal"
+        ],
+        "images": [
+          "/projects/randompedia.png",
+          "/projects/randompedia-1.png",
+          "/projects/randompedia-2.png"
+        ],
+        "stopped": true,
+        "role": "Side project",
+        "description": "Application mobile de divertissement autour de Wikipédia. Découverte d'articles au hasard.",
+        "context": "Application proposant d'apprendre en naviguant au hasard sur Wikipédia. Affiche 10 pages Wikipédia au hasard avec un résumé. Développée initialement en NativeScript, arrêtée faute de mises à jour de compatibilité.",
+        "highlights": [
+          "Navigation aléatoire dans Wikipédia",
+          "Résumé automatique des articles",
+          "Rafraîchissement des suggestions",
+          "Prévue pour être redéveloppée avec Ionic"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "title": "Stack technique",
+    "subtitle": "Les technologies que j'utilise au quotidien.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de données",
+      "devops": "DevOps",
+      "mobile": "Mobile",
+      "tools": "Outils"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Réflexions sur le développement web, l'architecture, et parler de mes side projects.",
+    "allPosts": "Tous les articles",
+    "empty": "Premiers articles à venir.",
+    "back": "Retour au blog"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Un projet, une question, une mission freelance ? N'hésitez pas à me contacter.",
+    "email": "Email",
+    "location": "Localisation",
+    "locationValue": "Toulouse, France - disponible en remote"
+  },
+  "footer": {
+    "ctaTitle": "Un projet en tête ?",
+    "copyright": "Pierre-Louis Duhoux - {year}"
+  },
+  "seo": {
+    "title": "Pierre-Louis Duhoux - Architecte & Développeur Web Freelance",
+    "description": "Pierre-Louis Duhoux, architecte et développeur web freelance à Toulouse. 15 ans d'expérience en Node.js, Vue.js, Nuxt, mobile."
+  }
+}
