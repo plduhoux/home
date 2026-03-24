@@ -54,6 +54,9 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      script: [
+        { src: '//gc.zgo.at/count.js', async: true, 'data-goatcounter': 'https://plduhoux.goatcounter.com/count' },
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
