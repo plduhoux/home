@@ -2,6 +2,8 @@
 const slugMap: Record<string, string> = {
   'arenai-genese': 'arenai-genesis',
   'arenai-genesis': 'arenai-genese',
+  'faire-jouer-des-ia-au-loup-garou-premiers-resultats-arenai': 'making-ais-play-werewolf-arenai-first-results',
+  'making-ais-play-werewolf-arenai-first-results': 'faire-jouer-des-ia-au-loup-garou-premiers-resultats-arenai',
   'developper-avec-un-agent-ia': 'developing-with-an-ai-agent',
   'developing-with-an-ai-agent': 'developper-avec-un-agent-ia',
   'revolutionnez-votre-app-avec-chatgpt': 'revolutionize-your-app-with-chatgpt',
