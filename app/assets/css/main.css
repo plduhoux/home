@@ -170,14 +170,14 @@ section[id],
 .prose-dark h2 a,
 .prose-dark h3 a,
 .prose-dark h4 a {
-  color: inherit;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
 .prose-dark h2 a:hover,
 .prose-dark h3 a:hover,
 .prose-dark h4 a:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-hover);
 }
 
 .prose-dark h3 {
