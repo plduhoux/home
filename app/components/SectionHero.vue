@@ -13,7 +13,7 @@ const { t } = useI18n()
 
     <div class="relative mx-auto max-w-5xl px-6 text-center">
       <!-- Photo -->
-      <div class="mb-8 animate-slide-up">
+      <div class="mb-10 animate-slide-up">
         <img
           src="/polo-blue.jpg"
           alt="Pierre-Louis Duhoux"
@@ -22,7 +22,7 @@ const { t } = useI18n()
         />
       </div>
 
-      <p class="text-sm text-accent font-medium tracking-widest uppercase mb-6 animate-fade-in-up animate-delay-100">
+      <p class="inline-flex max-w-full items-center justify-center rounded-full border border-[#eadfc7] bg-[#fff8e7] px-4 py-2 text-xs md:text-sm text-[#163e68] font-semibold tracking-wider uppercase mb-6 shadow-sm shadow-black/15 animate-fade-in-up animate-delay-100">
         {{ t('hero.location') }}
       </p>
       <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8 animate-slide-up">
