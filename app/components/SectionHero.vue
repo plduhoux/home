@@ -15,9 +15,9 @@ const { t } = useI18n()
       <!-- Photo -->
       <div class="mb-8 animate-slide-up">
         <img
-          src="/polo.webp"
+          src="/polo-blue.jpg"
           alt="Pierre-Louis Duhoux"
-          class="w-28 h-28 md:w-36 md:h-36 rounded-full mx-auto object-cover ring-2 ring-border ring-offset-4 ring-offset-bg shadow-xl shadow-accent/10"
+          class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover ring-2 ring-border ring-offset-4 ring-offset-bg shadow-xl shadow-accent/10"
           fetchpriority="high"
         />
       </div>

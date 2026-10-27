@@ -8,10 +8,10 @@
   --color-text-primary: #ededed;
   --color-text-secondary: #888898;
   --color-text-muted: #555566;
-  --color-accent: #6366f1;
-  --color-accent-hover: #818cf8;
-  --color-accent-2: #8b5cf6;
-  --color-accent-3: #06b6d4;
+  --color-accent: #2874cc;
+  --color-accent-hover: #5097e8;
+  --color-accent-2: #326db5;
+  --color-accent-3: #78b6f4;
   --color-border: #1e1e2e;
   --color-border-hover: #2e2e42;
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
@@ -74,7 +74,7 @@ body {
 
 /* Gradient text - VitePlus style */
 .gradient-text {
-  background: linear-gradient(135deg, #fff 0%, #c4b5fd 50%, #818cf8 100%);
+  background: linear-gradient(135deg, #fff 0%, #b3d8fb 50%, #5097e8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -111,7 +111,7 @@ body {
 
 .card-glow:hover {
   border-color: transparent;
-  box-shadow: 0 0 40px -12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 40px -12px rgba(40, 116, 204, 0.3);
 }
 
 /* Section divider with gradient */
@@ -129,7 +129,7 @@ section[id],
 
 /* Subtle glow */
 .glow {
-  box-shadow: 0 0 60px -12px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 60px -12px rgba(40, 116, 204, 0.2);
 }
 
 /* Prose styling for blog */
