@@ -11,20 +11,20 @@ const { t } = useI18n()
       <div class="absolute top-1/2 right-1/4 w-[300px] h-[300px] bg-accent-3/5 rounded-full blur-[100px]" />
     </div>
 
-    <div class="relative mx-auto max-w-5xl px-6 text-center">
+    <div class="relative mx-auto max-w-5xl px-6 py-28 md:py-32 text-center">
       <!-- Photo -->
-      <div class="mb-10 animate-slide-up">
+      <div class="relative mx-auto mb-10 w-36 md:w-64 lg:w-72 animate-slide-up">
         <img
           src="/polo-blue.jpg"
           alt="Pierre-Louis Duhoux"
-          class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover ring-2 ring-border ring-offset-4 ring-offset-bg shadow-xl shadow-accent/10"
+          class="w-36 h-36 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full mx-auto object-cover ring-2 ring-border ring-offset-4 ring-offset-bg shadow-xl shadow-accent/10"
           fetchpriority="high"
         />
-      </div>
 
-      <p class="inline-flex max-w-full items-center justify-center rounded-full border border-[#eadfc7] bg-[#fff8e7] px-4 py-2 text-xs md:text-sm text-[#163e68] font-semibold tracking-wider uppercase mb-6 shadow-sm shadow-black/15 animate-fade-in-up animate-delay-100">
-        {{ t('hero.location') }}
-      </p>
+        <p class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 whitespace-nowrap inline-flex items-center justify-center rounded-full border border-[#eadfc7] bg-[#fff8e7] px-4 py-2 text-xs md:text-sm text-[#163e68] font-semibold tracking-wider uppercase shadow-md shadow-black/20">
+          {{ t('hero.location') }}
+        </p>
+      </div>
       <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8 animate-slide-up">
         <span class="gradient-text">Pierre-Louis</span><br />
         <span class="gradient-text">Duhoux</span>
